@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Welcome to Jekyll!</title>
-  <meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...">
+  <title>Synapse: PCBs under development</title>
+  <meta name="description" content="Hello again, it has been a long time since I've updated this site. I have been busy working with individual companies and making PCBs to their design request...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://jcwoltz.github.io/jekyll/update/2014/12/29/welcome-to-jekyll.html">
+  <link rel="canonical" href="http://jcwoltz.github.io/synapsewireless/2011/06/02/synapse-pcbs-under-development.html">
   <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://jcwoltz.github.io/feed.xml" />
 </head>
 
@@ -81,25 +81,18 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Welcome to Jekyll!</h1>
-    <p class="post-meta">Dec 29, 2014</p>
+    <h1 class="post-title">Synapse: PCBs under development</h1>
+    <p class="post-meta">Jun 2, 2011 • {"display_name"=>"jcwoltz", "login"=>"jcwoltz", "email"=>"jc@jcwoltz.com", "url"=>"http://www.jcwoltz.com/"}</p>
   </header>
 
   <article class="post-content">
-    <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-<p>To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention <code>YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
-<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></div>
-
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://github.com/jekyll/jekyll-help">Jekyll’s dedicated Help repository</a>.</p>
-
+    <p>Hello again, it has been a long time since I've updated this site. I have been busy working with individual companies and making PCBs to their design requests. This process usually takes a week or two of emails back and forth to get the final design they want. Then it takes about 2-3 weeks for the boards to be fabricated and mailed to me. Then up to a week for me to assemble, test, and ship the finished product to the customer. If this is something you are interested in, please contact me.</p>
+<p>One of the requests I get fairly often is a board that charges LIPO/LI-Ion batteries from various power sources. Solar is the most common. Working with Serge taught me a bit with our earlier boards. Serge currently has prototype boards for charging and "fuel guage" of the batteries. They are coming along nicely. I would expect to have a finished product within a month. As these are still in proto-type and will have slight changes, now is the time to get involved if you want something specific.</p>
+<p>Personally, I have been focused on two areas. Improving the BASE board and improving/updating the underlying linux on the E10. The Base board is available now for $45 a piece + shipping on total order. The BASE board is intended to provide the basics needed for an RF Engine mesh network (sleepy or otherwise). The BASE board is 2 inches x 2.2 inches. It includes voltage regulation, RTC with interrupt to wake RF Engine, 24LC256 EEPROM for offline storage, LM75A Temp Sensor, and a RS-232 level converter. It also include addon/stacking headers. These headers can be used to put your application specific board on top.  One such addon module is the atmega32u4 microSD Logger. (More details in a future post.)</p>
+<p>On the E10. The E10 is great for what it does, but I would like to see it do more. I am working to update its buildroot environment. I would like to be able to package the extra software in .ipk files. This will allow users to run "opkg update &amp;&amp; opkg install socat" or whatever program they need to install. This is more of a personal goal, but if Synapse Wireless decides to pick it up and run with it, that is ok with me.</p>
+<p>Serge has been working very hard to create "bridge" devices (for lack of a better term) between diverse SNAP networks over the internet. We are currently able to do this using an E10 and openvpn. He is working to create a solution for Hobbyist/DIY market where they do not need an E10 to accomplish this. There are some exciting software and hardware development in the works.</p>
+<p>So, if anything of this interest you, give either one of us a contact through email or comment.</p>
+<p>Also, I will get some pictures of completed boards and documentation up soon. If there are an HOWTOs, board development, and anything else you would like to see, just let us know.</p>
 
   </article>
 

@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Welcome to Jekyll!</title>
-  <meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...">
+  <title>Arduino: Wirelessly Programming with Synapse Wireless RF Engine</title>
+  <meta name="description" content="This one took a little longer than normal to do. Before I get to the details, I want to point out a few forum posts that helped. reblli1 had a function to sa...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://jcwoltz.github.io/jekyll/update/2014/12/29/welcome-to-jekyll.html">
+  <link rel="canonical" href="http://jcwoltz.github.io/synapsewireless/arduino/2011/04/15/arduino-wirelessly-programming-with-synapse-wireless-rf-engine.html">
   <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://jcwoltz.github.io/feed.xml" />
 </head>
 
@@ -81,25 +81,25 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Welcome to Jekyll!</h1>
-    <p class="post-meta">Dec 29, 2014</p>
+    <h1 class="post-title">Arduino: Wirelessly Programming with Synapse Wireless RF Engine</h1>
+    <p class="post-meta">Apr 15, 2011 • {"display_name"=>"jcwoltz", "login"=>"jcwoltz", "email"=>"jc@jcwoltz.com", "url"=>"http://www.jcwoltz.com/"}</p>
   </header>
 
   <article class="post-content">
-    <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-<p>To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention <code>YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
-<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></div>
-
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://github.com/jekyll/jekyll-help">Jekyll’s dedicated Help repository</a>.</p>
-
+    <p>This one took a little longer than normal to do. Before I get to the details, I want to point out a few forum posts that helped. reblli1 had a function to <a href="http://forums.synapse-wireless.com/showpost.php?p=7095&amp;postcount=2">save on the number of writes to nvparams</a>. I'm sorry I forgot which post gave me the NVParameters to use for reliable serial. I am now able to RELIABLY program arduino boards at 57600 through avrdude or the arduino IDE.</p>
+<p><strong>Disclaimer: I do not own a SNAP Protoboard. I am using my own breakout boards, but this should be doable through a SNAP Protoboard if that is what you have. </strong></p>
+<p>I initially used three nodes to set this up, one being portal. Now that this is working, I only need the two nodes that talk to each other. Short details, Hook up UART1 to your computer with GPIO_10 on the DTR line. Hook up UART1 to your arduino with GPIO_9 on the reset pin.</p>
+<p>&nbsp;</p>
+<p>Modify these two scripts with your mac addresses:</p>
+<p><a href="http://jctc-electronics.googlecode.com/svn/trunk/SNAPpy/datamode1.py">Arduino Node</a></p>
+<p><a href="http://jctc-electronics.googlecode.com/svn/trunk/SNAPpy/datamode2.py">Computer Node</a></p>
+<p>This will be updated with more details. But if you are looking for a quick way to get up and running, here it is.</p>
+<p>Pictures of the Setup:</p>
+<p>Computer side is a USB -&gt; 3.3v FTDI Breakout -&gt; BOB. Note The BOB UART jumpers were meant to mate with an Arduino or similar device, So I had to use jumper wires to cross-over the RX and TX singnals.</p>
+<p>[gallery link="file"]</p>
+<p>Pictures of the Arduino Setup included above. The Green BOB was used for the Arduino. The Blue BOB was used on the computer side with the FTDI Cable.</p>
+<p>This has been tested to work with a Sparkfun Arduino Pro(Pictured), Arduino Duemilanove, Seeeduino Stalker, and a boarduino.</p>
+<p>&nbsp;</p>
 
   </article>
 

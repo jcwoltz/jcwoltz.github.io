@@ -6,11 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Welcome to Jekyll!</title>
-  <meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...">
+  <title>atmega32u4-microSD</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://jcwoltz.github.io/jekyll/update/2014/12/29/welcome-to-jekyll.html">
+  <link rel="canonical" href="http://jcwoltz.github.io/docs/atmega32u4-microsd/">
   <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://jcwoltz.github.io/feed.xml" />
 </head>
 
@@ -81,25 +82,44 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Welcome to Jekyll!</h1>
-    <p class="post-meta">Dec 29, 2014</p>
+    <h1 class="post-title">atmega32u4-microSD</h1>
   </header>
 
   <article class="post-content">
-    <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-<p>To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention <code>YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
-<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></div>
-
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://github.com/jekyll/jekyll-help">Jekyll’s dedicated Help repository</a>.</p>
-
+    <p>LED Configs:</p>
+<p>BLoader PE6 RED 24</p>
+<p>LED8 PC6 Orange 9</p>
+<p>LED9 PC7 Red 10</p>
+<p>LED1 PB7 Red 4</p>
+<p>LED2 PB6 Blue 15</p>
+<p>LED3 PB5 Orange 14</p>
+<p>LED4 PB4 Green 13</p>
+<p>&nbsp;</p>
+<p>#define PIN_B0        0<br />
+#define PIN_B1        1<br />
+#define PIN_B2        2<br />
+#define PIN_B3        3<br />
+#define PIN_B7        4<br />
+#define PIN_D0        5<br />
+#define PIN_D1        6<br />
+#define PIN_D2        7<br />
+#define PIN_D3        8<br />
+#define PIN_C6        9<br />
+#define PIN_C7        10<br />
+#define PIN_D6        11<br />
+#define PIN_D7        12<br />
+#define PIN_B4        13<br />
+#define PIN_B5        14<br />
+#define PIN_B6        15<br />
+#define PIN_F7        16<br />
+#define PIN_F6        17<br />
+#define PIN_F5        18<br />
+#define PIN_F4        19<br />
+#define PIN_F1        20<br />
+#define PIN_F0        21<br />
+#define PIN_D4        22<br />
+#define PIN_D5        23<br />
+#define PIN_E6        24</p>
 
   </article>
 

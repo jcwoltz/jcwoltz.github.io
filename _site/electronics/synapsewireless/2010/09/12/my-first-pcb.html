@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Welcome to Jekyll!</title>
-  <meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...">
+  <title>My first PCB</title>
+  <meta name="description" content="I've been working with these Synapse RF Engines. The advantage over an XBee (Series 1 and Series 2) is they are able to run python code. This allows the wire...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://jcwoltz.github.io/jekyll/update/2014/12/29/welcome-to-jekyll.html">
+  <link rel="canonical" href="http://jcwoltz.github.io/electronics/synapsewireless/2010/09/12/my-first-pcb.html">
   <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://jcwoltz.github.io/feed.xml" />
 </head>
 
@@ -81,25 +81,17 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Welcome to Jekyll!</h1>
-    <p class="post-meta">Dec 29, 2014</p>
+    <h1 class="post-title">My first PCB</h1>
+    <p class="post-meta">Sep 12, 2010 • {"display_name"=>"jcwoltz", "login"=>"jcwoltz", "email"=>"jc@jcwoltz.com", "url"=>"http://www.jcwoltz.com/"}</p>
   </header>
 
   <article class="post-content">
-    <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-<p>To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention <code>YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
-<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></div>
-
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://github.com/jekyll/jekyll-help">Jekyll’s dedicated Help repository</a>.</p>
-
+    <p>I've been working with these <a title="Synapse RF Engine" href="http://www.synapse-wireless.com/index.php?mainID=3&amp;subID=3&amp;type=product&amp;prodID=3">Synapse RF Engines</a>. The advantage over an XBee (<a title="Xbee Series 1" href="http://www.digi.com/products/wireless/point-multipoint/xbee-series1-module.jsp#overview">Series 1</a> and <a title="Xbee Series 2" href="http://www.digi.com/products/wireless/zigbee-mesh/xbee-zb-module.jsp#overview">Series 2</a>) is they are able to run python code. This allows the wireless modules to do more than pass serial data and pin status. The XBee modules have their place. I am a strong believer of using the right tool for the job and there is more than one correct way to do something. Both Synapse and XBee modules have 2mm pin spacing instead of the prototyping friendly 2.54mm spacing.</p>
+<p>There is no shortage of breakout boards for XBee modules. Adafruit has their <a title="XBee adapter kit v1.1" href="http://www.adafruit.com/index.php?main_page=product_info&amp;cPath=29&amp;products_id=126">XBee Adapter kit</a>. Sparkfun has their <a title="XBee Explorer Regulated" href="http://www.sparkfun.com/commerce/product_info.php?products_id=9132">XBee Explorer Regulated</a>. Seeed Studio has their <a title="UartSB v2.2" href="http://www.seeedstudio.com/depot/uartsb-v22-a-much-more-powerful-usb-to-serial-converter-p-495.html?cPath=104_109">UartSB</a> which is my favorite FTDI replacement.<strong>UPDATE: <a href="http://www.seeedstudio.com/depot/uartsbee-v31-p-688.html?cPath=104_109">New UartSB released</a>. </strong> But there isn't a breakout board for the Synapse Wireless RF Engine close to $10.</p>
+<p>So I decided to make a PCB.  My requirement for a breakout board were to be able to use it in a breadboard or plug an ftdi cable into them. I wanted to be able to select the uart and power source.</p>
+<p>[gallery link="file"]</p>
+<p>I added jumpers to be able to select which uart the FTDI will connect to. This also allows you to be able to reverse transmit and receive if you needed to. There is a jumper to power the wireless module from the ftdi or from a 3.3V LDO Regulator. The board has places for four 3 mm LEDs and a resistor network. These can be left off if the user has no need for them.</p>
+<p>The next revision will have the ability to plug a 5V FTDI in and safely communicate with the wireless module.</p>
 
   </article>
 

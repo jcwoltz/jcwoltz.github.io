@@ -6,9 +6,9 @@
 </description>
     <link>http://jcwoltz.github.io/</link>
     <atom:link href="http://jcwoltz.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 29 Dec 2014 10:02:36 -0500</pubDate>
-    <lastBuildDate>Mon, 29 Dec 2014 10:02:36 -0500</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <pubDate>Mon, 29 Dec 2014 13:15:31 -0500</pubDate>
+    <lastBuildDate>Mon, 29 Dec 2014 13:15:31 -0500</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
     
       <item>
         <title>Welcome to Jekyll!</title>
@@ -35,6 +35,306 @@
         <category>jekyll</category>
         
         <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>House Keeping</title>
+        <description>&lt;p&gt;Hello,&lt;/p&gt;
+&lt;p&gt;Lately my work has kept me very busy. If you are looking for synapse wireless E10 development, most of that is happening on the backend. Some posts and updates are happening in the &lt;a href=&quot;http://forums.synapse-wireless.com/forumdisplay.php?f=18&quot;&gt;E10 Synapse Wireless forum&lt;/a&gt;. Otherwise I am uploading new builds to &lt;a href=&quot;http://www.jcwoltz.com/e10/&quot;&gt;http://www.jcwoltz.com/e10&lt;/a&gt;/.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Regarding Custom Circuit board and Breakout boards for Synapse Wireless Radios, I do not have time to make them anymore. Solarbotics make a decent board for a breakout and also a board with a FTDI chip. They also make an adapter so you can put an RF Engine into an Xbee socket. Synapse Wireless has released their RF266 which is meant to plug directly into an XBee socket.&lt;/p&gt;
+&lt;p&gt;Someday I will write up direction on how to download and build the builds I release. Until then, there is information scattered in the Synapse Wireless forum.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 20 Apr 2012 22:12:43 -0400</pubDate>
+        <link>http://jcwoltz.github.io/synapsewireless/2012/04/20/house-keeping.html</link>
+        <guid isPermaLink="true">http://jcwoltz.github.io/synapsewireless/2012/04/20/house-keeping.html</guid>
+        
+        
+        <category>synapsewireless</category>
+        
+      </item>
+    
+      <item>
+        <title>Synapse: E10 OS updates</title>
+        <description>&lt;p&gt;One of the pieces that Synapse Wireless make is the &lt;a title=&quot;Snap Connect E10&quot; href=&quot;http://www.synapse-wireless.com/index.php?mainID=3&amp;amp;subID=10&amp;amp;type=product&amp;amp;prodID=10&quot;&gt;Snap Connect E10&lt;/a&gt;. I will call this the E10 for short. The E10 is an ARM926 platform running Linux. It has an RF Engine in it and runs a piece of software called SNAP Connect. Slowly over a couple of months I have been updating the Linux pieces of the E10. These updates are primarily to support more USB wifi and cellular data modem, but they also update most of the core utilities. This post is meant as a point in time documentation of the changes from the factory image to what I have.&lt;/p&gt;
+&lt;p&gt;Details below...&lt;/p&gt;
+&lt;p&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;a id=&quot;more-267&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Factory&lt;/th&gt;
+&lt;th&gt;Updated To&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Buildroot Version&lt;/td&gt;
+&lt;td&gt;2010.02&lt;/td&gt;
+&lt;td&gt;2011.11-git&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Linux Kernel&lt;/td&gt;
+&lt;td&gt;2.6.33&lt;/td&gt;
+&lt;td&gt;3.0.9(3.1.0 soon)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Target Architecture Variant&lt;/td&gt;
+&lt;td&gt;generic_arm&lt;/td&gt;
+&lt;td&gt;arm926t&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Target ABI&lt;/td&gt;
+&lt;td&gt;OABI&lt;/td&gt;
+&lt;td&gt;EABI&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;uClibc C library Version&lt;/td&gt;
+&lt;td&gt;0.9.30.2&lt;/td&gt;
+&lt;td&gt;0.9.31.x&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Binutils Version&lt;/td&gt;
+&lt;td&gt;2.20&lt;/td&gt;
+&lt;td&gt;2.21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;GCC Compiler Version&lt;/td&gt;
+&lt;td&gt;4.3.4&lt;/td&gt;
+&lt;td&gt;4.3.x&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;BusyBox Version&lt;/td&gt;
+&lt;td&gt;1.13.x&lt;/td&gt;
+&lt;td&gt;1.19.3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Python Version&lt;/td&gt;
+&lt;td&gt;2.6.6&lt;/td&gt;
+&lt;td&gt;2.7.2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;There are many other updates, but those are the highlights. This &lt;a href=&quot;http://forums.synapse-wireless.com/showthread.php?t=1796&quot;&gt;thread over on the forums&lt;/a&gt; has more details about where to download and how to install. One of the HUGE benefits is that I release my entire setup publicly. Using GitHub, this &lt;a title=&quot;E10-buildroot&quot; href=&quot;https://github.com/jcwoltz/E10-buildroot&quot;&gt;repository&lt;/a&gt; can be downloaded by anyone. If you are an individual or a company looking to customize your E10, you can download my repository. Then you can customize it and build it. A couple of companies have already picked up my repository to use for their own custom builds. The &lt;strong&gt;one and only&lt;/strong&gt; thing that I ask is this: If you find bugs or have issues, please let me know so they can be fixed. It would be nice if you let me know you are using my repo and/or build, but it is not necessary.&lt;/p&gt;
+&lt;p&gt;If you are looking for more USB wireless support, more USB Cellular modem support, updated applications, or just the ability to customize what you have on the E10, then download the repo and build an image.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 21 Nov 2011 19:29:01 -0500</pubDate>
+        <link>http://jcwoltz.github.io/synapsewireless/2011/11/21/synapse-e10-os-updates.html</link>
+        <guid isPermaLink="true">http://jcwoltz.github.io/synapsewireless/2011/11/21/synapse-e10-os-updates.html</guid>
+        
+        
+        <category>synapsewireless</category>
+        
+      </item>
+    
+      <item>
+        <title>Amani GT: A Project to look at</title>
+        <description>&lt;p&gt;&lt;a title=&quot;Amani GT&quot; href=&quot;http://majolsurf.net/wordpress/?page_id=1663&quot;&gt;Amani GT&lt;/a&gt; is a CPLD Shield for arduino form factor fast photo-typing. If you use an Arduino (or other similar board) and have never used a CPLD before, the Amani GT is a great starting point. The simplest way to use a CPLD is draw a schematic with standard logic from the 740 series. From there you can move on to using Verilog HDL. The Author/Creator of the Amani provides examples and various projects.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 18 Oct 2011 15:11:15 -0400</pubDate>
+        <link>http://jcwoltz.github.io/electronics/arduino/2011/10/18/amani-gt-a-project-to-look-at.html</link>
+        <guid isPermaLink="true">http://jcwoltz.github.io/electronics/arduino/2011/10/18/amani-gt-a-project-to-look-at.html</guid>
+        
+        
+        <category>electronics</category>
+        
+        <category>arduino</category>
+        
+      </item>
+    
+      <item>
+        <title>Synapse: Graphing with Gnuplot</title>
+        <description>&lt;p&gt;I&#39;ve been playing around with graphing and plotting of various sensor data. I also have been testing how batteries, my PCBs, and the Synapse Wireless RF Engines handle freezing temperatures. This post will focus on &lt;a title=&quot;GNUplot&quot; href=&quot;http://www.gnuplot.info/&quot; target=&quot;_blank&quot;&gt;http://www.gnuplot.info/&lt;/a&gt;. I am currently using SNAP Connect to receive the RPC calls, but Portal can be used just as well.&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;a id=&quot;more-259&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I have to thank the &quot;Using Gnuplot&quot; section of this &lt;a href=&quot;http://www.ladyada.net/make/logshield/lighttemp.html&quot; target=&quot;_blank&quot;&gt;article on adafruit&lt;/a&gt;. This helped me get going quickly. Jumping straight to the code:&lt;/p&gt;
+&lt;h2&gt;This is the SNAP Connect Code:&lt;/h2&gt;
+&lt;pre&gt;def loglm75aRawCalc(name, raw):
+    &quot;&quot;&quot; Converts the raw reading from a LM75A Temp Sensor &quot;&quot;&quot;
+    if name == None:
+        name = convertAddr(com.rpc_source_addr())
+    intraw = int(raw)
+    intC = intraw &amp;gt;&amp;gt; 5
+    tC = intC / 8.0
+    tF = calcCtoF(tC)
+    eventString = str(tC) + &quot;,&quot; + str(tF) + &quot;,&quot; + name
+    formattedString = time.strftime(&quot;%s&quot;) + &quot;,&quot; + convertAddr(com.rpc_source_addr()) + &quot;,&quot; + eventString
+    print formattedString
+    f = open(&#39;/root/jcCSVlm75.txt&#39;, &#39;a&#39;)
+    f.write(formattedString + &#39;\n&#39;)
+    f.close()
+    return tC
+def calcCtoF(raw):
+    fraw = float(raw)
+    tempF = (fraw * 9)/5 + 32
+    #print tempF
+    return tempF
+def convertAddr(addr):
+    return binascii.hexlify(addr)&lt;/pre&gt;
+&lt;h2&gt; This is the gnuplot config file:&lt;/h2&gt;
+&lt;pre&gt;set term png size 1024, 768
+set output &quot;jccsvlm75a.png&quot;
+set datafile separator &quot;,&quot;
+
+set xlabel &quot;Time&quot;              # set the lower X-axis label to &#39;time&#39;
+set xtics rotate by -270       # have the time-marks on their side
+
+set ylabel &quot;Temp in F&quot;
+set ytics nomirror             # tics only on left side
+
+set y2label &quot;Temp in C&quot;   # set the right Y-axis label
+set y2tics border              # put tics no right side
+
+set key box top left           # legend box
+set key box linestyle 0
+
+set xdata time                 # the x-axis is time
+set format x &quot;%H:%M:%S&quot;        # display as time
+set timefmt &quot;%s&quot;               # but read in as &#39;unix timestamp&#39;
+
+plot &quot;jcCSVlm75.txt&quot; using 1:4 with lines title &quot;FTemp&quot;, \
+ &quot;jcCSVlm75.txt&quot; using 1:3 axes x1y2 with lines title &quot;CTemp&quot;&lt;/pre&gt;
+&lt;h2&gt; To Create the Graph:&lt;/h2&gt;
+&lt;pre&gt; gnuplot plotlm75a.cfg&lt;/pre&gt;
+&lt;p&gt;This create the jccsvlm75a.png as defined in the gnuplot config file. Now the code used in snap connect can easily be modified to run in Portal. It can also be modified to log other type of data. For right now, take a look at this graph: &lt;img class=&quot;alignnone&quot; src=&quot;http://jcu.homelinux.org/rrd/jccsvlm75a.png&quot; alt=&quot;&quot; width=&quot;1024&quot; height=&quot;768&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I will update and post links to code for Portal, the nodes sending this data, and more. If any one has suggestions to improve the graphs, please send them in.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 20 Aug 2011 15:56:44 -0400</pubDate>
+        <link>http://jcwoltz.github.io/electronics/synapsewireless/2011/08/20/synapse-graphing-with-gnuplot.html</link>
+        <guid isPermaLink="true">http://jcwoltz.github.io/electronics/synapsewireless/2011/08/20/synapse-graphing-with-gnuplot.html</guid>
+        
+        
+        <category>electronics</category>
+        
+        <category>synapsewireless</category>
+        
+      </item>
+    
+      <item>
+        <title>LiPo: Searching for the right IC</title>
+        <description>&lt;p&gt;I have pretty much given up on all things Lithium Polymer (LiPo) related development. However, Serge Sozonoff has continued the development of a LiPo charger that can work from solar. He has continued to use the DS2764 as the fuel guage. Back in December Serge and I collaborated on a PCB that combined the MCP73871, DS2764, an RF Engine, and a few other ICs. I was never able to get mine assebled correctly, but he got his assembled and working. Here&#39;s a picture of it in the case it was designed for:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.jcwoltz.com/wp-content/uploads/2011/04/IMG_1576.jpg&quot;&gt;&lt;img class=&quot;size-thumbnail wp-image-194 alignnone&quot; title=&quot;MCP73871 in case&quot; src=&quot;https://www.jcwoltz.com/wp-content/uploads/2011/04/IMG_1576-150x150.jpg&quot; alt=&quot;&quot; width=&quot;150&quot; height=&quot;150&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It is with great pleasure to say that Adafruit has now &lt;a title=&quot;Adafruit MCP73871 LiPo Charger&quot; href=&quot;http://www.adafruit.com/products/390&quot;&gt;released a LiPo charger based on the MCP73871&lt;/a&gt;. I really think many people who charge LiPo batteries from a solar panel will enjoy this IC for two reasons. The first reason is the MCP73871 separates the system load from the charging of the battery.  That means you can run you system load without a battery if you need to. The second reason is the MCP73871 monitors the incoming voltage from the power source. The reason it does this is as it tried to draw too much current, the voltage will drop. When the voltage drops to a certain point, the MCP73871 will not try to pull more current than that. Without this feature, The solar panel, charging IC, and battery go into this endless loop of charging, then not charging. This is a big bonus for people wanting to use solar panels. There is one downside of the MCP73871 when compared to the MCP73861 and that is the MCP73871 is limited to a 6 volt maximum input. However the advantages that the MCP73871 offers outweigh this single disadvantage.&lt;/p&gt;
+&lt;p&gt;For those interested, the eagle files for the PCB in the picture are available at:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://jctc-electronics.googlecode.com/svn/trunk/Synapse/SolarPower/archive/SolarBase731-v02.brd&quot;&gt;http://jctc-electronics.googlecode.com/svn/trunk/Synapse/SolarPower/archive/SolarBase731-v02.brd&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://jctc-electronics.googlecode.com/svn/trunk/Synapse/SolarPower/archive/SolarBase731-v02.sch&quot;&gt;http://jctc-electronics.googlecode.com/svn/trunk/Synapse/SolarPower/archive/SolarBase731-v02.sch&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Now to the real point of this post. Something has spark my interest/curiosity in LiPo charging and Fuel Guage monitoring. There are plenty of ICs for multicell LiPo or Li-Ion battery packs. I cant find a single IC for charging and monitoring of a single cell Lithium Polymer battery. If you know of any, please let me know.&lt;/p&gt;
+&lt;p&gt;The reason for this: I assume an integrated solution would know more about the state of the battery, the charge, the discharge rate, etc. Ideally, I would like something that seperates the battery pack charging from the system load. I would also like it to monitor the incoming voltage so it know when to back off the current draw. So If you know of anything like this, please let me know.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 06 Jul 2011 17:19:39 -0400</pubDate>
+        <link>http://jcwoltz.github.io/electronics/2011/07/06/lipo-searching-for-the-right-ic.html</link>
+        <guid isPermaLink="true">http://jcwoltz.github.io/electronics/2011/07/06/lipo-searching-for-the-right-ic.html</guid>
+        
+        
+        <category>electronics</category>
+        
+      </item>
+    
+      <item>
+        <title>Synapse: PCBs under development</title>
+        <description>&lt;p&gt;Hello again, it has been a long time since I&#39;ve updated this site. I have been busy working with individual companies and making PCBs to their design requests. This process usually takes a week or two of emails back and forth to get the final design they want. Then it takes about 2-3 weeks for the boards to be fabricated and mailed to me. Then up to a week for me to assemble, test, and ship the finished product to the customer. If this is something you are interested in, please contact me.&lt;/p&gt;
+&lt;p&gt;One of the requests I get fairly often is a board that charges LIPO/LI-Ion batteries from various power sources. Solar is the most common. Working with Serge taught me a bit with our earlier boards. Serge currently has prototype boards for charging and &quot;fuel guage&quot; of the batteries. They are coming along nicely. I would expect to have a finished product within a month. As these are still in proto-type and will have slight changes, now is the time to get involved if you want something specific.&lt;/p&gt;
+&lt;p&gt;Personally, I have been focused on two areas. Improving the BASE board and improving/updating the underlying linux on the E10. The Base board is available now for $45 a piece + shipping on total order. The BASE board is intended to provide the basics needed for an RF Engine mesh network (sleepy or otherwise). The BASE board is 2 inches x 2.2 inches. It includes voltage regulation, RTC with interrupt to wake RF Engine, 24LC256 EEPROM for offline storage, LM75A Temp Sensor, and a RS-232 level converter. It also include addon/stacking headers. These headers can be used to put your application specific board on top.  One such addon module is the atmega32u4 microSD Logger. (More details in a future post.)&lt;/p&gt;
+&lt;p&gt;On the E10. The E10 is great for what it does, but I would like to see it do more. I am working to update its buildroot environment. I would like to be able to package the extra software in .ipk files. This will allow users to run &quot;opkg update &amp;amp;&amp;amp; opkg install socat&quot; or whatever program they need to install. This is more of a personal goal, but if Synapse Wireless decides to pick it up and run with it, that is ok with me.&lt;/p&gt;
+&lt;p&gt;Serge has been working very hard to create &quot;bridge&quot; devices (for lack of a better term) between diverse SNAP networks over the internet. We are currently able to do this using an E10 and openvpn. He is working to create a solution for Hobbyist/DIY market where they do not need an E10 to accomplish this. There are some exciting software and hardware development in the works.&lt;/p&gt;
+&lt;p&gt;So, if anything of this interest you, give either one of us a contact through email or comment.&lt;/p&gt;
+&lt;p&gt;Also, I will get some pictures of completed boards and documentation up soon. If there are an HOWTOs, board development, and anything else you would like to see, just let us know.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 02 Jun 2011 23:30:39 -0400</pubDate>
+        <link>http://jcwoltz.github.io/synapsewireless/2011/06/02/synapse-pcbs-under-development.html</link>
+        <guid isPermaLink="true">http://jcwoltz.github.io/synapsewireless/2011/06/02/synapse-pcbs-under-development.html</guid>
+        
+        
+        <category>synapsewireless</category>
+        
+      </item>
+    
+      <item>
+        <title>Synapse: SNARF-BASE Pre-orders : UPDATED!</title>
+        <description>&lt;p&gt;Please see the following post to see about the SNARF-BASE:&lt;/p&gt;
+&lt;p&gt;&lt;a title=&quot;Synapse: Users of RFEs, Why Re-invent the wheel?&quot; href=&quot;https://www.jcwoltz.com/2011/03/synapse-users-of-rfes-why-re-invent-the-wheel/&quot;&gt;https://www.jcwoltz.com/2011/03/synapse-users-of-rfes-why-re-invent-the-wheel/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The PCBs for the SNARF-BASE v3i5 will be coming in next week. In order  to know many parts to order, I am asking for commitments. No money  needed at this time.&lt;br /&gt;
+If I get commitments for 60 boards(total as a group), the price for you will be $37.00/board + shipping&lt;br /&gt;
+If I get commitments for 25 boards(total as a group), the price for you will be $41.00/board + shipping&lt;/p&gt;
+&lt;p&gt;I  do not have the money to simply order the parts for all the boards and  have them sitting around. For people interested after the Pre-orders are  done, the price will be $50.00, unless their order is 25+ boards.&lt;/p&gt;
+&lt;p&gt;If interested, please email me with how many boards you want, and your mailing address.&lt;br /&gt;
+I  would like to close Pre-orders on May 6th, and order the parts. (if  needed, pre-orders can be extended, but delivery time will be delayed  too)&lt;br /&gt;
+The timeline for board assembly and mailing&lt;br /&gt;
+Payments to be made in full prior to your shipping&lt;br /&gt;
+Boards should be ready to be mailed out May 17th&lt;/p&gt;
+&lt;h2&gt;Update May 1, 2011:&lt;/h2&gt;
+&lt;p&gt;Below are image exports from the design software. The SNARF-BASE is the first two images. The ATMega32u4 is the next two images. A Basic protoboard that fits as an addon to the base board is the next image. Then the last image is the Breakout Board. The breakout board is intended to be a cheap simple way to get access to all radio pins or a small node that doesn&#39;t need much.&lt;/p&gt;
+&lt;p&gt;[gallery link=&quot;file&quot;]&lt;/p&gt;
+</description>
+        <pubDate>Thu, 28 Apr 2011 17:40:54 -0400</pubDate>
+        <link>http://jcwoltz.github.io/electronics/synapsewireless/2011/04/28/synapse-snarf-base-pre-orders.html</link>
+        <guid isPermaLink="true">http://jcwoltz.github.io/electronics/synapsewireless/2011/04/28/synapse-snarf-base-pre-orders.html</guid>
+        
+        
+        <category>electronics</category>
+        
+        <category>synapsewireless</category>
+        
+      </item>
+    
+      <item>
+        <title>Arduino: Wirelessly Programming with Synapse Wireless RF Engine</title>
+        <description>&lt;p&gt;This one took a little longer than normal to do. Before I get to the details, I want to point out a few forum posts that helped. reblli1 had a function to &lt;a href=&quot;http://forums.synapse-wireless.com/showpost.php?p=7095&amp;amp;postcount=2&quot;&gt;save on the number of writes to nvparams&lt;/a&gt;. I&#39;m sorry I forgot which post gave me the NVParameters to use for reliable serial. I am now able to RELIABLY program arduino boards at 57600 through avrdude or the arduino IDE.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Disclaimer: I do not own a SNAP Protoboard. I am using my own breakout boards, but this should be doable through a SNAP Protoboard if that is what you have. &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I initially used three nodes to set this up, one being portal. Now that this is working, I only need the two nodes that talk to each other. Short details, Hook up UART1 to your computer with GPIO_10 on the DTR line. Hook up UART1 to your arduino with GPIO_9 on the reset pin.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Modify these two scripts with your mac addresses:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://jctc-electronics.googlecode.com/svn/trunk/SNAPpy/datamode1.py&quot;&gt;Arduino Node&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://jctc-electronics.googlecode.com/svn/trunk/SNAPpy/datamode2.py&quot;&gt;Computer Node&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This will be updated with more details. But if you are looking for a quick way to get up and running, here it is.&lt;/p&gt;
+&lt;p&gt;Pictures of the Setup:&lt;/p&gt;
+&lt;p&gt;Computer side is a USB -&amp;gt; 3.3v FTDI Breakout -&amp;gt; BOB. Note The BOB UART jumpers were meant to mate with an Arduino or similar device, So I had to use jumper wires to cross-over the RX and TX singnals.&lt;/p&gt;
+&lt;p&gt;[gallery link=&quot;file&quot;]&lt;/p&gt;
+&lt;p&gt;Pictures of the Arduino Setup included above. The Green BOB was used for the Arduino. The Blue BOB was used on the computer side with the FTDI Cable.&lt;/p&gt;
+&lt;p&gt;This has been tested to work with a Sparkfun Arduino Pro(Pictured), Arduino Duemilanove, Seeeduino Stalker, and a boarduino.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 15 Apr 2011 12:36:18 -0400</pubDate>
+        <link>http://jcwoltz.github.io/synapsewireless/arduino/2011/04/15/arduino-wirelessly-programming-with-synapse-wireless-rf-engine.html</link>
+        <guid isPermaLink="true">http://jcwoltz.github.io/synapsewireless/arduino/2011/04/15/arduino-wirelessly-programming-with-synapse-wireless-rf-engine.html</guid>
+        
+        
+        <category>synapsewireless</category>
+        
+        <category>arduino</category>
+        
+      </item>
+    
+      <item>
+        <title>Synapse: SNARF-BASE Add-on</title>
+        <description>&lt;p&gt;The previous post highlighted the features of the SNARF-BASE v3h. The first add-on board that I have created for the base is a microSD data logger.&lt;/p&gt;
+&lt;p&gt;[gallery link=&quot;file&quot;]&lt;/p&gt;
+&lt;p&gt;First, you&#39;ll have to forgive the sloppy hand assembly as this is a first prototype. Enough talk, lets get to the hardware features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ATMega32u4 MCU&lt;/li&gt;
+&lt;li&gt;microSD Socket&lt;/li&gt;
+&lt;li&gt;Mini-B USB Socket&lt;/li&gt;
+&lt;li&gt;Standard Add-on headers for BASE and other boards.&lt;/li&gt;
+&lt;li&gt;The chips SDA/SCL lines have a solder jumper to connect them to the SDA/SCL lines of the BASE board.&lt;/li&gt;
+&lt;li&gt;UART1 of the RFE is connected to the UART1 of the ATMega32u4&lt;/li&gt;
+&lt;li&gt;RGB LED to indicate various status&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now to the software. This thing can have various bootloaders on it so you do not need an AVRISP programmer. My personal preference is the DFU bootloader, but there is a CDC bootloader, and maybe soon a HID bootloader. Dean Camera at &lt;a title=&quot;LUFA&quot; href=&quot;http://www.fourwalledcubicle.com/LUFA.php&quot;&gt;http://www.fourwalledcubicle.com/LUFA.php&lt;/a&gt; has done an excellect job with LUFA. The Board currently uses a slightly modified DFU Bootloader from LUFA to light a LED to let you know you are in bootloader mode.&lt;/p&gt;
+&lt;p&gt;The LUFA stack provides great usb projects and demos, but I also want to make this board compatible with &lt;a title=&quot;Arduino&quot; href=&quot;http://arduino.cc/en/Main/HomePage&quot;&gt;Arduino&lt;/a&gt;. Thankfully Paul Stoffregen at &lt;a href=&quot;http://www.pjrc.com/&quot;&gt;pjrc.com&lt;/a&gt; has done some excellent work with arduino and the USB series of Atmel Chips. He has written &lt;a href=&quot;http://www.pjrc.com/teensy/teensyduino.html&quot;&gt;teensyduino&lt;/a&gt;, which is an addon to the arduino environment. This allows you to use most of the arduino libraries available on this board. There are some moral/ethical/(legal?) problems using the teensyduino on a non teensy board. You have to rely on the drivers written by Paul when using teensyduino to connect to a computer.&lt;/p&gt;
+&lt;p&gt;Anyhow, This is just the first alpha of this board. Only 3 people will have a copy to beta test. The second alpha has already been sent off to the fab to fix some of the problems of this board.&lt;/p&gt;
+&lt;p&gt;If this board is something that interests you, and/or you would like to see changes please let me know. For starters the 5mm RGB led has been removed and replaced with surface mount LEDS. Also The second revision has solder jumpers to select RFE UART0 or UART1.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.jcwoltz.com/wp-content/uploads/2011/03/AtMEGA32u4-uSD-AddON-v01-brd.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-163&quot; title=&quot;AtMEGA32u4-uSD-AddON-v01-brd&quot; src=&quot;https://www.jcwoltz.com/wp-content/uploads/2011/03/AtMEGA32u4-uSD-AddON-v01-brd-e1301257806606-285x300.png&quot; alt=&quot;&quot; width=&quot;285&quot; height=&quot;300&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;https://www.jcwoltz.com/wp-content/uploads/2011/03/AtMEGA32u4-uSD-AddON-v01-brd-pour.png&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-164&quot; title=&quot;AtMEGA32u4-uSD-AddON-v01-brd-pour&quot; src=&quot;https://www.jcwoltz.com/wp-content/uploads/2011/03/AtMEGA32u4-uSD-AddON-v01-brd-pour-e1301257882178-300x229.png&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;229&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 28 Mar 2011 00:00:30 -0400</pubDate>
+        <link>http://jcwoltz.github.io/electronics/synapsewireless/2011/03/28/snarfbase-addon-usdlogger.html</link>
+        <guid isPermaLink="true">http://jcwoltz.github.io/electronics/synapsewireless/2011/03/28/snarfbase-addon-usdlogger.html</guid>
+        
+        
+        <category>electronics</category>
+        
+        <category>synapsewireless</category>
         
       </item>
     

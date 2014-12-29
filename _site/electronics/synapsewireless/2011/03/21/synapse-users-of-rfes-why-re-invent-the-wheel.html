@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Welcome to Jekyll!</title>
-  <meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...">
+  <title>Synapse: Users of RFEs, Why Re-invent the wheel?</title>
+  <meta name="description" content="If you are a company or individual who uses Synapse Wireless RF Engines, how many times do you design a board with the same basic components? With the help a...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://jcwoltz.github.io/jekyll/update/2014/12/29/welcome-to-jekyll.html">
+  <link rel="canonical" href="http://jcwoltz.github.io/electronics/synapsewireless/2011/03/21/synapse-users-of-rfes-why-re-invent-the-wheel.html">
   <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://jcwoltz.github.io/feed.xml" />
 </head>
 
@@ -81,25 +81,54 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Welcome to Jekyll!</h1>
-    <p class="post-meta">Dec 29, 2014</p>
+    <h1 class="post-title">Synapse: Users of RFEs, Why Re-invent the wheel?</h1>
+    <p class="post-meta">Mar 21, 2011 • {"display_name"=>"jcwoltz", "login"=>"jcwoltz", "email"=>"jc@jcwoltz.com", "url"=>"http://www.jcwoltz.com/"}</p>
   </header>
 
   <article class="post-content">
-    <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-<p>To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention <code>YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
-<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></div>
-
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://github.com/jekyll/jekyll-help">Jekyll’s dedicated Help repository</a>.</p>
-
+    <p>If you are a company or individual who uses Synapse Wireless RF Engines, how many times do you design a board with the same basic components? With the help and co-operation from some people around the world, here is the SNARF-BASE:</p>
+<p style="text-align: center;"><a href="http://www.jcwoltz.com/wp-content/uploads/2011/03/IMG-20110315-00147.jpg">[gallery link="file" columns="2"]
+<p></p>
+<p><a href="http://www.jcwoltz.com/wp-content/uploads/2011/03/IMG-20110315-00147.jpg"> </a></p>
+<p><a href="http://www.jcwoltz.com/wp-content/uploads/2011/03/IMG-20110315-00147.jpg"></a></p>
+<p><a href="http://www.jcwoltz.com/wp-content/uploads/2011/03/IMG-20110315-00147.jpg"> </a></p>
+<p><a href="http://www.jcwoltz.com/wp-content/uploads/2011/03/IMG-20110315-00147.jpg"></a></p>
+<p><a href="http://www.jcwoltz.com/wp-content/uploads/2011/03/IMG-20110315-00147.jpg"> </a></p>
+<p><a href="http://www.jcwoltz.com/wp-content/uploads/2011/03/IMG-20110315-00147.jpg"></a></p>
+<p><a href="http://www.jcwoltz.com/wp-content/uploads/2011/03/IMG-20110315-00147.jpg"> </a></p>
+<p><a href="http://www.jcwoltz.com/wp-content/uploads/2011/03/IMG-20110315-00147.jpg"></a></p>
+<p><a href="http://www.jcwoltz.com/wp-content/uploads/2011/03/IMG-20110315-00147.jpg"> </a></p>
+<p><a href="http://www.jcwoltz.com/wp-content/uploads/2011/03/IMG-20110315-00147.jpg"></a></p>
+<p><a href="http://www.jcwoltz.com/wp-content/uploads/2011/03/IMG-20110315-00147.jpg"> </a></p>
+<p><a href="http://www.jcwoltz.com/wp-content/uploads/2011/03/IMG-20110315-00147.jpg"></a></p>
+<p><a href="http://www.jcwoltz.com/wp-content/uploads/2011/03/IMG-20110315-00147.jpg"> </a></p>
+<p><a href="http://www.jcwoltz.com/wp-content/uploads/2011/03/IMG-20110315-00147.jpg"></a></p>
+<p>The SNARF-BASE v3h has these features:</p>
+<ul>
+<li>Voltage Regulation to 3.3 volts for the RF Engine with a protection diode</li>
+<li>Has solder jumpers to select between RF100 or RF200 (even RF300)</li>
+<li>Has 3 very useful I2C devices for almost any project onboard:
+<ul>
+<li>PCF2129A Realtime Clock with Interrupt to wake RFE from sleeep</li>
+<li>LM75A Temperature Sensor</li>
+<li>24LC256 EEPROM to store data. (Mainly used when out of range, but has other purposes)</li>
+</ul>
+</li>
+<li>Has a RS232 driver on both UART0 and UART1</li>
+<li>Has an Axillary voltage regulator used to shutdown sensors on demand</li>
+<li>Uses standard spaced headers  for application specific addon boards that could be stacked</li>
+</ul>
+<p>The goal is to provide this board fully assembled and tested. This should allow companies/users to get started on their application faster. By including the headers, you only have to develop a small pcb for your project. (You could even use protoboard if you wanted).</p>
+<p>&nbsp;</p>
+<p>More projects and boards to come shortly. Although I have been quiet on the blog, I have been developing and testing boards and parts. Stay tuned.....</p>
+<h2>UPDATE: 2011/03/28</h2>
+<p>This board was done for a company. I am sold out, but will have more at the end of April. The newest design is not finalized yet. Now is the time to talk to me If you would like some of these boards, or see changes to these boards. I will order 40 updated PCBs. Again, If you are interested in this board and/or changes, contact me before April 4th. Changes so far:</p>
+<ul>
+<li>Changed RS232 driver to ICL3223EIVZ in order to save power in sleep modes</li>
+<li>Move Temperature sensor out from under RF Engine</li>
+<li>R4 (Addon Header Reserved Pin 4) connected to VIN after the diode, but before the voltage regulator. This is to provide application specific addon boards access to the VIN in case the addon board needs more than 3.3 volts.</li>
+</ul>
+</a></p>
 
   </article>
 
