@@ -4,7 +4,7 @@ tagline: ""
 description: ""
 
 email: jwoltz@gmail.com
-#url: "http://jcwoltz.github.io" # the base hostname & protocol for your site
+url: "http://jcwoltz.github.io" # the base hostname & protocol for your site
 baseurl: /
 paginate: 5
 
@@ -24,6 +24,7 @@ author:
   name: JC Woltz
   email: jwoltz@gmail.com
   github: jcwoltz
+
 github_username:  jcwoltz
 
 # Exclude Ruby gem stuff
