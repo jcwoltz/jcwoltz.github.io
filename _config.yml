@@ -4,8 +4,9 @@ tagline: ""
 description: ""
 
 email: jwoltz@gmail.com
-url: "http://jcwoltz.github.io" # the base hostname & protocol for your site
-baseurl: /
+url: 	"//jcwoltz.github.io" # the base hostname & protocol for your site
+#url:     "//localhost:4000"
+baseurl: ""
 paginate: 5
 
 # Build settings
