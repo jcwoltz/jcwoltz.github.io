@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: true
+published: false
 title: House Keeping
 author:
   display_name: jcwoltz

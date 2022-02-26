@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: true
+published: false
 title: 'Synapse: PCBs under development'
 author:
   display_name: jcwoltz

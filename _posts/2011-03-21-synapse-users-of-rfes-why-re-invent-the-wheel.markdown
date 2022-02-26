@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: true
+published: false
 title: 'Synapse: Users of RFEs, Why Re-invent the wheel?'
 author:
   display_name: jcwoltz

@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: true
+published: false
 title: 'Synapse: SNARF-BASE Add-on'
 author:
   display_name: jcwoltz

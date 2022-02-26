@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: true
+published: false
 title: 'Amani GT: A Project to look at'
 author:
   display_name: jcwoltz
