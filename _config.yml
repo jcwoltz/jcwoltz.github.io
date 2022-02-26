@@ -42,3 +42,5 @@ github_username:  jcwoltz
 
 # Exclude Ruby gem stuff
 exclude: ["vendor"]
+
+theme: jekyll-theme-modernist
