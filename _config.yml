@@ -5,7 +5,7 @@ description: ""
 
 email: jwoltz@gmail.com
 # url: 	"//jcwoltz.github.io" # the base hostname & protocol for your site
-url: "http://www.jcwoltz.com"
+url: "https://www.jcwoltz.com"
 baseurl: ""
 #paginate: 5
 
